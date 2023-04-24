@@ -1,0 +1,27 @@
+<!--pages/create/create.wxml-->
+<header class="break-line">内容</header>
+<view class="content">
+  <button class="type-btn" wx:for="{{partyTypes}}" wx:key="unique">{{item.name}}</button>
+</view>
+
+<header class="break-line">名称</header>
+<view class="name">
+  <input type="text" placeholder="[用户名]的Insink局"/>
+  <button>确认</button>
+</view>
+
+<header class="break-line">人数</header>
+<view class="population">
+  <view class="population-btns">
+    <button class="ppl-btn" wx:for="{{pplCount}}" wx:key="unique">{{item.text}}</button>
+  </view>
+  <view class="ppl-input">
+    <text>具体人数：</text>
+    <input type="text" style="border: 1pt solid black; padding-left: 5pt; width: 100rpx;" placeholder="2" placeholder-style="color: black"/>
+  </view>
+</view>
+
+<view class="footer">
+  <header class="break-line">确认信息</header>
+  <button type="submit" bindtap="toTime">下一页</button>
+</view>

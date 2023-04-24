@@ -1,0 +1,17 @@
+
+<view class="place">
+  <text>地点</text>
+  <input type="text"/>
+</view>
+<header class="break-line">OR</header>
+<input style="border: 1pt solid lightgray; padding-left: 5pt; margin: 10pt; width: 200pt;" placeholder="搜索地点" type="text"/>
+<map
+  id="map"
+  subkey="ZUEBZ-6A2AM-GK663-6CZUR-UVDEQ-3CBRU"
+  longitude="116.273514"
+  latitude="40.040417"
+  scale="14"
+  layer-style="1"
+  style="margin:auto"
+></map>
+<button type="submit" bindtap="toParty">确认</button>

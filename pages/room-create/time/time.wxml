@@ -1,0 +1,10 @@
+<!--pages/room-create/time/time.wxml-->
+<header class="break-line">时间</header>
+<view class="time">
+  
+</view>
+
+<view class="footer">
+  <header class="break-line">确认信息</header>
+  <button type="submit" bindtap="toLocation">下一页</button>
+</view>

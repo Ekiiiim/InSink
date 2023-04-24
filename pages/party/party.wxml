@@ -1,0 +1,41 @@
+<view class="top-bar">
+  <button class="little-btn" style="position: relative; left: -278rpx; top: 0rpx; width: 204rpx; height: 94rpx; display: block; box-sizing: border-box" bindtap="share"><image class="little-btn-img" src="images/share.png" style="width: 54rpx; height: 59rpx; display: inline-block; box-sizing: border-box"></image></button>
+</view>
+
+<view class="title">
+  <!-- <text style="position: relative; left: 169rpx; top: 6rpx; font-size: 15pt">Enter Name Here...</text> -->
+  <text style="position: relative; left: 169rpx; top: 5rpx; font-size: 15pt; width: 427rpx; height: 52rpx; display: block; text-align: center;" data-name="partyName" >Party Name</text>
+  <text style="position: relative; left: 284rpx; top: 52rpx">N table of M</text>
+  <button class="little-btn" style="position: relative; left: -159rpx; top: -14rpx; width: 97rpx; height: 78rpx; display: block; box-sizing: border-box" bindtap="showDetail"><image class="little-btn-img" src="images/icon-detail.png"></image></button>
+</view>
+
+<view>
+  <!-- <scroll-view enable-flex="true" class="seat-list" scroll-y="true">
+    <block wx:for="{{seats}}" wx:key="unique">
+      <button class="seat-btn">{{item.occupied ? "xxx":"轻触入座"}}</button>
+    </block>
+  </scroll-view> -->
+  <view class="seat-list">
+    <button class="swiper-btn" bindtap="swipeLeft"><image class="swiper-btn-img" src="images/left-triangle.png"></image></button>
+    <swiper class="seat-swiper" indicator-dots="true" current="{{swiper.current}}">
+      <view wx:for="{{swiper.seats}}" wx:key="unique">
+        <swiper-item catchtouchmove="catchTouchMove">
+            <button class="seat-btn">{{item.occupied ? "xxx":"轻触入座"}}</button>
+        </swiper-item>
+      </view>
+    </swiper>
+    <button class="swiper-btn" bindtap="swipeRight"><image class="swiper-btn-img" src="images/right-triangle.png"></image></button>
+  </view>
+</view>
+
+<view class="footer">
+  <view class="spectate">
+    <text>Spectators</text>
+    <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+    <button class="spec-btn">Spectate</button>
+  </view>
+  <view>
+    <button class="action-btn">Confirm</button>
+    <button class="action-btn">Leave</button>
+  </view>
+</view>

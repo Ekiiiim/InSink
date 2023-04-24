@@ -1,0 +1,6 @@
+<!--pages/main/main.wxml-->
+<view style="margin-top: 80pt; display: flex; justify-content: space-between; height: 160pt; flex-direction: column;">
+  <button type="primary" plain="true" bindtap="toCreate">创建房间</button>
+  <button type="default" plain="true" bindtap="toJoin">加入房间</button>
+  <button type="default" plain="true" bindtap="toParty">返回上一局</button>
+</view>

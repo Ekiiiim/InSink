@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/party/party",
+    "pages/user/user",
+    "pages/join/join",
+    "pages/room-create/create/create",
+    "pages/room-create/location/location",
+    "pages/room-create/time/time"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Quick Party",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "green",
+    "borderStyle": "black",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/friends.png",
+        "selectedIconPath": "images/friends_HL.png",
+        "text": "组局"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/self.png",
+        "selectedIconPath": "images/self_HL.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,77 @@
+.seat-btn {
+  height: 100rpx;
+  width: 277rpx !important;
+  margin-top: 30rpx;
+  /* margin: 50px, 10px !important; */
+}
+.seat-list {
+  /* height: 500rpx;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50rpx;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.seat-swiper {
+  padding-top: 40px;
+  width: 90%;
+}
+.swiper-btn {
+  margin-top: 50px;
+  background-color: transparent;
+  border: none;
+  width: 70rpx;
+}
+.swiper-btn-img {
+  background-color: transparent;
+  border: none;
+  width: 70rpx;
+  height: 70rpx;
+}
+.footer {
+  height: fit-content;
+  margin: 0 40rpx;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.spectate {
+  display: flex;
+  height: 300rpx;
+  flex-direction: column;
+}
+.spec-btn {
+  width: 300rpx !important;
+}
+.action-btn {
+  width: 340rpx !important;
+  margin: 35rpx 30rpx !important;
+}
+.little-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 70rpx;
+  height: 70rpx;
+}
+.little-btn-img {
+  width: 70rpx;
+  height: 70rpx;
+}
+.userinfo-avatar {  
+  overflow:hidden;  
+  display: block;  
+  width: 80rpx;  
+  height: 80rpx;  
+  margin: 10rpx;
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
